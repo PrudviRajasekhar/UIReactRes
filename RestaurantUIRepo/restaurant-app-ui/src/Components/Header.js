@@ -186,7 +186,7 @@ export default function Header() {
             noWrap
             className={classes.toolbarTitle}
           >
-            Spicy restaurent
+            Spicy restaurant
           </Typography>
           <Button
             href="#"
