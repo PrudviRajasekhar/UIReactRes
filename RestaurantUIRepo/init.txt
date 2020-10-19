@@ -1,0 +1,4 @@
+initial commit
+
+when you pull it, the step-1 you have to do is:
+npm install
