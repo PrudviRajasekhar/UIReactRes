@@ -154,6 +154,11 @@ export default function Header() {
   const classes = useStyles();
   let history = useHistory();
 
+  const handleHomeButton = (e) => {
+    console.log("handle login");
+    history.push("/home");
+  };  
+
   const handleLoginButton = (e) => {
     console.log("handle login");
     history.push("/login");
@@ -174,7 +179,7 @@ export default function Header() {
         className={classes.appBar}
       >
         <Toolbar className={classes.toolbar}>
-          <Restaurant className={classes.icon} />
+          <Restaurant className={classes.icon} onClick={handleHomeButton} />
           <Typography
             variant="h6"
             color="inherit"
