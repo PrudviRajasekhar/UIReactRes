@@ -12,7 +12,7 @@ import { blueGrey, pink } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
-    primary: pink,
+    primary: blueGrey,
   },
 });
 
