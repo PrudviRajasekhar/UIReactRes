@@ -154,14 +154,10 @@ export default function Header() {
   const classes = useStyles();
   let history = useHistory();
 
-  const handleHomeButton = (e) => {
-    console.log("handle login");
-    history.push("/home");
-  };  
-
   const handleLoginButton = (e) => {
     console.log("handle login");
     history.push("/login");
+    //return <Link href="http://localhost:6051/authn-service/api/token" />;
   };
 
   const handleSignupButton = (e) => {
@@ -179,14 +175,14 @@ export default function Header() {
         className={classes.appBar}
       >
         <Toolbar className={classes.toolbar}>
-          <Restaurant className={classes.icon} onClick={handleHomeButton} />
+          <Restaurant className={classes.icon} />
           <Typography
             variant="h6"
             color="inherit"
             noWrap
             className={classes.toolbarTitle}
           >
-            Spicy restaurant
+            Spicy restaurent
           </Typography>
           <Button
             href="#"
@@ -202,7 +198,8 @@ export default function Header() {
             color="primary"
             variant="outlined"
             className={classes.link}
-            onClick={handleLoginButton}
+            // onClick={handleLoginButton}
+            href="http://localhost:6051/authn-service/api/token"
           >
             Login
           </Button>

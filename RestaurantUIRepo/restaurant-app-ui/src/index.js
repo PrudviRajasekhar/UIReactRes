@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import blue from "@material-ui/core/colors/blue";
-import { blueGrey, pink } from "@material-ui/core/colors";
+import { blueGrey } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {

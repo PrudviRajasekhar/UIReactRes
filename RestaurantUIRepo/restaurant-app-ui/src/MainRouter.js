@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
+import Dashboard from "./Components/Dashboard";
+import VerifyAccount from "./Components/VerifyAccount";
 
 function MainRouter() {
   return (
@@ -12,9 +14,10 @@ function MainRouter() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/user-reg/:email" component={VerifyAccount} />
         </Switch>
       </BrowserRouter>
     </div>
